@@ -1,0 +1,483 @@
+:root {
+  --primary-color: #3932af;
+  --text-color1: #222222;
+  --text-color2: #555555;
+}
+
+/* ? content */
+/** .title */
+#content-wrap > .title h2 {
+  width: 1100px;
+  font-size: 38px;
+  color: var(--text-color1);
+  margin: 20px auto 0;
+}
+
+/** section-1.card-box */
+#section-1.card-box {
+  width: 1100px;
+  margin: 50px auto 0;
+}
+
+#section-1.card-box .title {
+  display: flex;
+  align-items: center;
+}
+
+#section-1.card-box .title h5 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-1.card-box .title a {
+  height: 30px;
+  line-height: 32px;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 0 15px;
+  margin-left: 17px;
+  background-color: #555555;
+  border-radius: 6px;
+}
+
+#section-1.card-box .title a span {
+  padding-right: 16px;
+  background: url(../img/ico_btn_arrow1.png) 100% 40% no-repeat;
+}
+
+#section-1.card-box > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#section-1.card-box > div > .card {
+  position: relative;
+  width: 542px;
+  height: 390px;
+  text-align: center;
+  padding-top: 49px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#section-1.card-box > div > .card::before {
+  content: '';
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+  background: url(../img/spr_compensation_ser.png) no-repeat;
+}
+
+#section-1.card-box > div > .card p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  margin-top: 30px;
+}
+
+#section-1.card-box > div > .card p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 18px;
+}
+
+#section-1.card-box > div > .card .link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: start;
+  padding: 25px 0 0 30px;
+  background: #f8fafb url(../img/bg_dot1.gif) repeat-x;
+}
+
+#section-1.card-box > div > .card > .link > span {
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+  color: var(--text-color2);
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+#section-1.card-box > div > .card > .link > span::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #7c7c7c;
+  border-radius: 3px;
+}
+
+#section-1.card-box > div > .card .link > .btn-link {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background-color: var(--primary-color);
+}
+
+/* ? section-2.find-stock */
+#section-2.find-stock {
+  width: 1100px;
+  text-align: center;
+  padding: 27px 0;
+  margin: 80px auto 0;
+  border: 3px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+#section-2.find-stock .text-box {
+  padding-bottom: 30px;
+  margin: 0 55px 30px;
+  background: url(../img/bg_dot1.gif) repeat-x 0 100%;
+}
+
+#section-2.find-stock .text-box .txt1 {
+  line-height: 26px;
+  font-size: 20px;
+  color: var(--text-color1);
+}
+
+#section-2.find-stock .text-box .txt2 {
+  line-height: 22px;
+  color: var(--text-color2);
+  margin-top: 7px;
+}
+
+#section-2.find-stock .text-box .txt2 a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+#section-2.find-stock .search-box {
+  color: var(--text-color2);
+}
+
+#section-2.find-stock .search-box .sn1,
+#section-2.find-stock .search-box .sn2,
+#section-2.find-stock .search-box .sn3 {
+  height: 46px;
+  padding: 0 15px;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+#section-2.find-stock .search-box .sn1 {
+  width: 70px;
+  margin-left: 17px;
+}
+
+#section-2.find-stock .search-box .sn2 {
+  width: 70px;
+  margin-left: 3px;
+}
+
+#section-2.find-stock .search-box .sn3 {
+  width: 160px;
+  margin-left: 3px;
+}
+
+#section-2.find-stock .search-box > .btn-find {
+  height: 44px;
+  line-height: 46px;
+  color: #ffffff;
+  padding: 0 30px;
+  margin-left: 3px;
+  background-color: #222222;
+  border-radius: 6px;
+}
+
+/* ? section-3.online-claim */
+#section-3.online-claim {
+  width: 1100px;
+  margin: 80px auto 0;
+}
+
+#section-3.online-claim .title h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-3.online-claim > .card {
+  position: relative;
+  height: 290px;
+  padding-top: 70px;
+  margin-top: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#section-3.online-claim > .card > .exp {
+  display: flex;
+}
+
+#section-3.online-claim > .card > .exp > .icon {
+  position: relative;
+  width: 270px;
+}
+
+#section-3.online-claim > .card > .exp > .icon::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  display: block;
+  width: 128px;
+  height: 128px;
+  background: url(../img/spr_compensation_ser.png) no-repeat;
+  transform: translateX(-50%);
+}
+
+#section-3.online-claim > .card > .exp > .text .txt1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#section-3.online-claim > .card > .exp > .text .txt2 {
+  line-height: 24px;
+  margin-top: 15px;
+  color: var(--text-color2);
+}
+
+#section-3.online-claim > .card > .link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 30px 0 0 30px;
+  background: #f8fafb url(../img/bg_dot1.gif) repeat-x;
+}
+
+#section-3.online-claim > .card > .link .txt1 {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  color: var(--text-color1);
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+#section-3.online-claim > .card > .link .txt1::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #7c7c7c;
+  border-radius: 3px;
+}
+
+#section-3.online-claim > .card > .link .txt2 {
+  position: relative;
+  color: var(--text-color2);
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+#section-3.online-claim > .card > .link .txt2::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #dddddd;
+}
+
+#section-3.online-claim > .card > .link > .btn-link {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background-color: var(--primary-color);
+}
+
+/* ? section-4.online-claim2 */
+#section-4.online-claim2 {
+  width: 1100px;
+  margin: 80px auto 0;
+}
+
+#section-4.online-claim2 > .title h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-4.online-claim2 > .card-box {
+  display: flex;
+  margin-top: 20px;
+}
+
+#section-4.online-claim2 > .card-box > .card {
+  position: relative;
+  width: 542px;
+  height: 230px;
+  padding: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#section-4.online-claim2 > .card-box > .card::after {
+  content: '';
+  position: absolute;
+  top: 29px;
+  right: 35px;
+  width: 75px;
+  height: 72px;
+  background: url(../img/spr_compensation_ser.png) no-repeat 0 -384px;
+}
+
+#section-4.online-claim2 > .card-box > .card + .card {
+  margin-left: 16px;
+}
+
+#section-4.online-claim2 > .card-box > .card > .txt1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-4.online-claim2 > .card-box > .card > .txt2 {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 16px;
+}
+
+#section-4.online-claim2 > .card-box > .card > .btn-link {
+  background-color: var(--primary-color);
+  margin-top: 30px;
+}
+
+#section-4.online-claim2 > .feel-guide {
+  line-height: 18px;
+  font-size: 13px;
+  color: #e32c23;
+}
+
+#section-4.online-claim2 > .feel-guide ul li::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: url(../img/ico_feel_mark3.png) no-repeat;
+}
+
+#section-4.online-claim2 > .card-box > .card .etc {
+  font-size: 14px;
+  color: var(--text-color2);
+  margin-top: 30px;
+}
+
+#section-4.online-claim2 > .card-box .card .etc strong:nth-child(1) {
+  position: relative;
+  color: var(--text-color1);
+  padding-right: 12px;
+  margin-right: 10px;
+}
+
+#section-4.online-claim2 > .card-box .card .etc strong:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 14px;
+  background: #dddddd;
+}
+
+/* ? section-5.payment */
+#section-5.payment {
+  width: 1100px;
+  margin: 80px auto 0;
+}
+
+#section-5.payment .title > h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-5.payment .payment-step {
+  height: 252px;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 50px;
+  background-color: #f8fafb;
+  border-radius: 10px;
+}
+
+#section-5.payment .payment-step ol {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#section-5.payment .payment-step ol li {
+  position: relative;
+  width: 246px;
+}
+
+#section-5.payment .payment-step ol li + li::before {
+  content: '';
+  position: absolute;
+  top: 43px;
+  left: -13px;
+  width: 26px;
+  height: 15px;
+  background: url('../img/ico_arrow_step.png') no-repeat;
+}
+
+#section-5.payment .payment-step ol li .tag {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background: url(../img/spr_compensation_ser.png) no-repeat 0 -522px;
+}
+
+#section-5.payment .payment-step ol li .tag > span {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0 12px;
+  background-color: #222222;
+  border-radius: 24px;
+}
+
+#section-5.payment .payment-step ol li p:nth-child(2) {
+  color: var(--text-color1);
+  margin-top: 23px;
+}
+
+#section-5.payment .payment-step ol li p:nth-child(3) {
+  font-size: 14px;
+  color: var(--text-color2);
+  margin-top: 10px;
+}
+
+#section-5.payment .feel-guide {
+  color: #777777;
+}

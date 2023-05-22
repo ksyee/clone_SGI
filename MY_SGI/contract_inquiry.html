@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contract inquiry</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contract_inquiry.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header id="header-wrap" data-include="../include/header.html"></header>
+
+      <div id="content-wrap">
+        <div class="breadcrumbs">
+          <ul>
+            <li><span></span></li>
+            <li><span>MY SGI</span></li>
+            <li><span>보험가입</span></li>
+            <li><span>개인정보동의</span></li>
+          </ul>
+          <button class="btn-print">인쇄</button>
+        </div>
+        <div class="title">
+          <h3>보험계약 조회</h3>
+        </div>
+        <div class="tab">
+          <ul>
+            <li><a href="#" class="active">기간별현황조회</a></li>
+            <li><a href="#">유효현황조회</a></li>
+            <li><a href="#">보험만기건조회</a></li>
+            <li><a href="#">증권별조회</a></li>
+          </ul>
+        </div>
+
+        <section id="section-1" class="notice">
+          <h5>꼭 알아두세요!</h5>
+          <ul>
+            <li>
+              신규 또는 변경증권의 발급일이 조회기간 안에 속한 건만 조회할 수
+              있습니다.
+            </li>
+            <li>
+              상품명 중 '전세금보장신용보험' 선택 시, 최대 3년까지 조회할 수
+              있습니다.
+            </li>
+          </ul>
+        </section>
+
+        <section id="section-2" class="form-table">
+          <form>
+            <table>
+              <tr>
+                <th>발급일</th>
+                <td>
+                  <div class="inner">
+                    <div class="input-date">
+                      <input type="date" name="datetime1" /><span>~</span
+                      ><input type="date" name="datetime2" />
+                    </div>
+                    <div class="select-period">
+                      <button>1주</button>
+                      <button>1개월</button>
+                      <button>3개월</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>피보험자고객번호</th>
+                <td>
+                  <div class="inner">
+                    <input type="password" name="pw" />
+                    <div>
+                      <input type="checkbox" id="v-pad" />
+                      <label for="v-pad" class="on">가상키패드 입력</label>
+                    </div>
+                    <span class="f-guide"
+                      >-없이 숫자만 입력(입력하지 않을 시 전체 조회)</span
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>상품명</th>
+                <td>
+                  <select name="prod-name" id="">
+                    <option value="" selected="selected">
+                      모든 상품(신원보증 제외)
+                    </option>
+                    <option>ABS</option>
+                    <option>Advance Payment</option>
+                    <option>Advance Payment</option>
+                    <option>Bid</option>
+                    <option>Bid</option>
+                    <option>CGB</option>
+                    <option>FCI</option>
+                    <option>Maintenance</option>
+                    <option>Maintenance</option>
+                    <option>Performance</option>
+                    <option>Performance</option>
+                    <option>e-구매대금</option>
+                    <option>가계수표</option>
+                    <option>가맹본부</option>
+                    <option>가맹사업자</option>
+                    <option>개인금융</option>
+                    <option>경매</option>
+                    <option>계약</option>
+                    <option>공매</option>
+                    <option>공사이행</option>
+                    <option>공탁</option>
+                    <option>교육훈련비</option>
+                    <option>기업금융</option>
+                    <option>납세</option>
+                    <option>다이렉트공탁</option>
+                    <option>다이렉트신원</option>
+                    <option>다이렉트인・허가</option>
+                    <option>다이렉트지급</option>
+                    <option>리스</option>
+                    <option>물품대금</option>
+                    <option>병무귀국</option>
+                    <option>보석</option>
+                    <option>부품성능</option>
+                    <option>분양</option>
+                    <option>사채</option>
+                    <option>상품권</option>
+                    <option>생활안정자금</option>
+                    <option>선금</option>
+                    <option>설계・감리</option>
+                    <option>성능</option>
+                    <option>소비자피해보상</option>
+                    <option>송환</option>
+                    <option>시공보증</option>
+                    <option>신원</option>
+                    <option>신원보증인</option>
+                    <option>어음</option>
+                    <option>인・허가</option>
+                    <option>임대주택</option>
+                    <option>입찰</option>
+                    <option>전세금보장</option>
+                    <option>전세금보장(법인)</option>
+                    <option>전자상거래(P/G)</option>
+                    <option>전자상거래(결제수단)</option>
+                    <option>정보보호</option>
+                    <option>주택관리사</option>
+                    <option>지급</option>
+                    <option>지급신용</option>
+                    <option>차액</option>
+                    <option>크레디트카드</option>
+                    <option>품질</option>
+                    <option>하자</option>
+                    <option>할부판매</option>
+                    <option>후견인</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>계약상태</th>
+                <td>
+                  <select name="contractStatus">
+                    <option selected="selected">전체</option>
+                    <option>계약유지</option>
+                    <option>해지</option>
+                    <option>보험금지급</option>
+                    <option>보험금지급 심사중</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </form>
+          <button type="button" class="btn-find">조회</button>
+        </section>
+
+        <section id="section-3" class="find-result">
+          <div class="title">
+            <h4>기간별현황조회 검색결과</h4>
+            <div class="total">
+              <p>검색결과: 총 <strong class="tc1">0</strong>건</p>
+              <div class="btn-wrap">
+                <button class="btn-link"><span>엑셀요청</span></button>
+                <button class="btn-link"><span>결과조회</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <table>
+              <thead>
+                <tr>
+                  <th>선택</th>
+                  <th>번호</th>
+                  <th>구분</th>
+                  <th>증권번호</th>
+                  <th>계약(변경)일</th>
+                  <th>보험기간</th>
+                  <th>보험가입금액</th>
+                  <th>보험료</th>
+                  <th>피보험자</th>
+                  <th>주계약내용</th>
+                  <th>계약상태</th>
+                  <th>비고</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="no-data" colspan="12"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="section-4" class="guide-box">
+          <div class="text-box">
+            <p>검색결과 목록을 엑셀로 저장하거나 인쇄할 수 있습니다.</p>
+            <p>일괄 인쇄는 보험증권만 직접 안쇄할 수 있습니다.</p>
+            <p>
+              단, 영문증권(홈페이지 인쇄 불가), 전자보증서 정송(재발급센터에서
+              인쇄 가능), 보험증권 사서함 건(보험증권 사서함에서 인쇄 가능)은
+              제외됩니다.
+            </p>
+          </div>
+          <button class="btn-pill"><span>인쇄</span></button>
+        </section>
+      </div>
+
+      <footer id="footer" data-include="../include/footer.html"></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/include.js"></script>
+    <script src="../js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mailbox</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/mailbox.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header id="header-wrap" data-include="../include/header.html"></header>
+
+      <div id="content-wrap">
+        <div class="breadcrumbs">
+          <ul>
+            <li><span></span></li>
+            <li><span>MY SGI</span></li>
+            <li><span>나의 계약</span></li>
+            <li><span>보험증권 사서함</span></li>
+          </ul>
+          <button class="btn-print">인쇄</button>
+        </div>
+        <div class="content">
+          <h3>보험증권 사서함</h3>
+          <p>보험증권 사서함을 이용해 증권과 영수증을 쉽게 출력해보세요!</p>
+          <section id="section-1" class="guide-box">
+            <div class="head">
+              <h5>보험증권 사서함이란?</h5>
+              <p>로그인 없이 사서함 번호과 증권번호 만으로 보험증권 인쇄를 할 수 있어요.</p>
+            </div>
+            <div class="howuse">
+              <p>어떻게 이용하나요?</p>
+              <ul>
+                <li>
+                  <p>
+                    보험 계약자가 SGI서울보증 영업지점 또는 홈페이지에서 보험가입 시 신청할 수 있으며, 사서함번호는
+                    영수증에 적혀 있습니다.
+                  </p>
+                </li>
+                <li>
+                  <p class="highlight-black">피보험자인 경우, 보험계약자로부터 사서함번호를 안내받으세요.</p>
+                </li>
+                <li>
+                  <p class="highlight-red">모바일(휴대폰,태블릿 등)기기로도 이용할 수 있습니다.</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="section-2" class="input-box">
+            <div class="item1">
+              <div class="title">
+                <h5>보험증권 인쇄</h5>
+              </div>
+              <div class="input-table">
+                <table>
+                  <tr>
+                    <th>증권번호</th>
+                    <td>
+                      <input type="text" class="ph-style" placeholder="증권번호를 입력하세요" />
+                      <span class="help"></span>
+                    </td>
+                  </tr>
+                  <tr class="mailbox">
+                    <th>보험증권 사서함번호</th>
+                    <td>
+                      <input type="text" />
+                      <span class="dash"></span>
+                      <input type="text" />
+                      <span>(연도 4자리 입력-일련번호 8자리 입력)</span>
+                    </td>
+                  </tr>
+                </table>
+                <div class="btn-box">
+                  <button class="btn-check"><span>조회</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="item2">
+              <div class="title">
+                <h5>보험증권 + 영수증 인쇄</h5>
+              </div>
+              <div class="input-table">
+                <table>
+                  <tr>
+                    <th>보험계약자 고객구분</th>
+                    <td class="radio">
+                      <div>
+                        <input type="radio" id="rb-individual" name="customer-type" checked />
+                        <label for="rb-individual">개인</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="rb-copr" name="customer-type" />
+                        <label for="rb-copr">법인 또는 기타단체(정부/지자체 등)</label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>보험계약자 고객번호</th>
+                    <td>
+                      <input type="text" class="ph-style" placeholder="사업자(-없이 입력)" />
+                    </td>
+                  </tr>
+                  <tr class="mailbox">
+                    <th>보험증권 사서함번호</th>
+                    <td>
+                      <input type="text" />
+                      <span class="dash"></span>
+                      <input type="text" />
+                      <span>(연도 4자리 입력-일련번호 8자리 입력)</span>
+                    </td>
+                  </tr>
+                </table>
+                <div class="btn-box">
+                  <button class="btn-check"><span>조회</span></button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="section-3" class="guide-box">
+            <div>
+              <p class="subtitle">보험증권 사서함번호를 모르시나요?</p>
+              <p class="text">
+                보험증권 사서함번호 찾기는 보험계약자만 이용할 수 있으며, 피보험자는 이용할 수 없습니다.
+              </p>
+              <div class="btn-box">
+                <button class="btn-find">보험증권 사서함번호 찾기</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer id="footer" data-include="../include/footer.html"></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/include.js"></script>
+    <script src="../js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+:root {
+  --primary-color: #3932af;
+  --text-color1: #222222;
+  --text-color2: #555555;
+}
+
+/* ? content-wrap */
+
+#content-wrap .content {
+  width: 1100px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+#content-wrap .content > h3 {
+  font-size: 38px;
+}
+
+/* ? section-1 tab */
+#section-1.tab {
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  background-color: #f8fafb;
+  border-radius: 30px 10px;
+}
+
+#section-1.tab ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+}
+
+#section-1.tab ul li {
+  width: 100%;
+}
+
+#section-1.tab ul li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  color: var(--text-color1);
+  text-align: center;
+}
+
+#section-1.tab ul li a.active {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border-radius: 30px 10px;
+}
+
+/* ? section2 list */
+#section-2.list {
+  margin-top: 50px;
+}
+
+#section-2.list ul li {
+  padding-left: 8px;
+}
+
+#section-2.list ul > li > p {
+  position: relative;
+  line-height: 22px;
+  font-size: 14px;
+  padding: 1px 0;
+}
+
+#section-2.list ul > li > p::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: -8px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #7c7c7c;
+}
+
+#section-2.list ul > li > p > .highlight {
+  color: #f4534b;
+}
+
+/* ? section-3 agree-box-wrap */
+#section-3.agree-box-wrap > .agree-box {
+  position: relative;
+  margin-top: 25px;
+  padding: 40px 40px 30px 240px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+#section-3.agree-box-wrap > .agree-box::before {
+  content: '';
+  position: absolute;
+  top: 38px;
+  left: 78px;
+  width: 100px;
+  height: 100px;
+  background: url(../img/spr_agree_docu_ico.png) no-repeat;
+}
+
+#section-3.agree-box-wrap > .agree-box:nth-child(2):before {
+  background-position: 0 -100px;
+}
+
+#section-3.agree-box-wrap > .agree-box:nth-child(3):before {
+  background-position: 0 -200px;
+}
+
+#section-3.agree-box-wrap > .agree-box:nth-child(4):before {
+  background-position: 0 -300px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .tag {
+  position: absolute;
+  top: -2px;
+  left: 18px;
+  width: 44px;
+  height: 52px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background: url(../img/bg_ribbon_tag.png) no-repeat;
+}
+
+#section-3.agree-box-wrap > .agree-box > .title {
+  font-size: 24px;
+  color: var(--text-color1);
+}
+
+#section-3.agree-box-wrap > .agree-box > .subtitle {
+  position: relative;
+  font-size: 18px;
+  color: var(--primary-color);
+  padding-left: 17px;
+  margin-top: 25px;
+  background: url(../img/ico_arrow2.png) no-repeat 0 2px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .text {
+  position: relative;
+  font-size: 16px;
+  color: var(--text-color2);
+  letter-spacing: -0.7px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .text::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #7c7c7c;
+  border-radius: 3px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .text > .highlight {
+  color: #f4534b;
+}
+
+#section-3.agree-box-wrap > .agree-box > .btn-box {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #dddddd;
+}
+
+#section-3.agree-box-wrap > .agree-box > .btn-box > .btn-agree + .btn-agree {
+  margin-left: 6px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .btn-box > .agree-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#section-3.agree-box-wrap > .agree-box > .btn-box > .agree-list > li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 19px 25px 15px 65px;
+  margin-bottom: 5px;
+  background-color: #fafaff;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .btn-box > .agree-list > li > div > span.num {
+  position: absolute;
+  left: 28px;
+}
+
+#section-3.agree-box-wrap > .agree-box > .btn-box > .agree-list > li > button {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 20px;
+  margin-top: -4px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 36px;
+}

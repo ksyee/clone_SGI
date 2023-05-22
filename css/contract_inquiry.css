@@ -1,0 +1,303 @@
+:root {
+  --primary-color: #3932af;
+  --text-color1: #222222;
+  --text-color2: #555555;
+}
+
+/* ? content-wrap */
+#content-wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#content-wrap .title h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-color1);
+}
+
+/* ? tabs */
+#content-wrap > .tab {
+  width: 100%;
+  height: 60px;
+  margin-top: 50px;
+  background-color: #f8fafb;
+  border-radius: 30px 10px;
+}
+
+#content-wrap > .tab ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+}
+
+#content-wrap > .tab ul li {
+  width: 100%;
+}
+
+#content-wrap > .tab ul li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  color: var(--text-color1);
+  text-align: center;
+}
+
+#content-wrap > .tab ul li a.active {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border-radius: 30px 10px;
+  box-shadow: 0px 10px 30px 0px rgba(57, 66, 175, 0.3);
+}
+
+/* ? section-1.notice */
+#section-1.notice {
+  position: relative;
+  padding: 30px 30px 25px;
+  margin-top: 50px;
+  background-color: #fafaff;
+  border: 1px solid #858cda;
+  border-radius: 10px;
+}
+
+#section-1.notice h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+  padding-left: 35px;
+  background: url(../img/ico_guide_notice.png) no-repeat 0 0;
+}
+
+#section-1.notice ul {
+  margin-top: 18px;
+}
+
+#section-1.notice ul li {
+  position: relative;
+  line-height: 24px;
+  color: var(--text-color2);
+  padding-left: 10px;
+}
+
+#section-1.notice ul li::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background-color: #7c7c7c;
+  border-radius: 3px;
+}
+
+/* ? section-2.form-table */
+#section-2.form-table {
+  margin-top: 80px;
+}
+
+#section-2.form-table table {
+  width: 100%;
+  border-top: 2px solid #222222;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+#section-2.form-table table tr th {
+  width: 200px;
+  line-height: 22px;
+  color: var(--text-color1);
+  text-align: start;
+  padding: 15px 15px 15px 30px;
+  background-color: #f8fafb;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+#section-2.form-table table tr td {
+  height: 60px;
+  padding-left: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#section-2.form-table table tr td > .inner {
+  display: flex;
+  align-items: center;
+}
+
+#section-2.form-table table tr td input,
+#section-2.form-table table tr td select {
+  height: 46px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+#section-2.form-table table tr td:first-of-type .input-date input[type='date'] {
+  width: 150px;
+  color: var(--text-color1);
+  padding-right: 49px;
+}
+
+#section-2.form-table table tr td > .inner > .select-period {
+  margin-left: 7px;
+}
+
+#section-2.form-table table tr td > .inner > .select-period > button {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  padding: 0 16px;
+  margin-left: 1px;
+  background-color: #ffffff;
+  border: 1px solid #b2b2b2;
+  border-radius: 6px;
+}
+
+#section-2.form-table table tr td > .inner > input[type='password'] {
+  width: 270px;
+  height: 46px;
+}
+
+#section-2.form-table table tr:nth-child(2) td > .inner > div {
+  display: flex;
+  align-items: center;
+  margin: 0 27px 0 14px;
+}
+#section-2.form-table table tr td > .inner > div > input[type='checkbox'] {
+  display: none;
+}
+
+#section-2.form-table table tr td > .inner > div > label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+#section-2.form-table table tr td > .inner > div > label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../img/spr_ico_chk.png) no-repeat;
+}
+
+#section-2.form-table table tr td > .inner > div > label.on::before {
+  background-position: 0 -16px;
+}
+
+#section-2.form-table table tr td > .inner > .f-guide {
+  font-size: 14px;
+  color: #777777;
+  margin-left: 18px;
+}
+
+#section-2.form-table table tr td select {
+  color: var(--text-color2);
+}
+
+#section-2.form-table > .btn-find {
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  color: #ffffff;
+  padding: 0 27px;
+  margin: 40px auto 0;
+  border-radius: 6px;
+  background-color: #222222;
+}
+
+/* ? section-3.find-result */
+#section-3.find-result {
+  margin-top: 80px;
+}
+
+#section-3.find-result > .title > h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-3.find-result > .title > .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#section-3.find-result > .title > .total > p {
+  color: var(--text-color2);
+}
+
+#section-3.find-result > .result {
+  margin-top: 20px;
+}
+
+#section-3.find-result > .result > table {
+  width: 100%;
+  border-top: 2px solid #222222;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+#section-3.find-result > .result > table > thead > tr th {
+  line-height: 20px;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color1);
+  background-color: #f8fafb;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#section-3.find-result > .result > table > thead > tr th + th {
+  border-left: 1px solid #e6e6e6;
+}
+
+#section-3.find-result > .result > table > tbody > tr > td.no-data {
+  line-height: 20px;
+  padding: 15px 10px;
+  font-size: 14px;
+  color: #777777;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+#section-3.find-result > .result > table > tbody > tr > td.no-data::before {
+  content: '';
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 20px;
+  background: url(../img/ico_data_notice.png) no-repeat;
+}
+
+/* ? section-4.guide-box */
+#section-4.guide-box {
+  position: relative;
+  padding: 35px 40px 30px;
+  margin-top: 80px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+#section-4.guide-box .text-box > p {
+  line-height: 24px;
+  color: var(--text-color2);
+  padding: 1px 0;
+}
+
+#section-4.guide-box .btn-pill {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+}
+
+#section-4.guide-box .btn-pill > span {
+  padding-left: 26px;
+  background: url(../img/ico_print2.png) no-repeat;
+}

@@ -1,0 +1,342 @@
+:root {
+  --primary-color: #3932af;
+  --text-color1: #222222;
+  --text-color2: #555555;
+}
+
+/* ! common */
+span.primary-color {
+  color: var(--primary-color);
+}
+
+/* ? content */
+#content {
+  width: 1100px;
+  padding-top: 20px;
+  margin: 48px auto 0;
+}
+
+#content .head-title h3 {
+  font-size: 38px;
+  color: var(--text-color1);
+}
+
+#content .head-title p {
+  line-height: 28px;
+  font-size: 18px;
+  color: var(--text-color2);
+  margin: 25px 0 -7px;
+}
+
+/* ? section-1 tab */
+#section-1.tab ul {
+  display: flex;
+  height: 60px;
+  margin-top: 50px;
+  background: #f8fafb;
+  border-radius: 30px 10px;
+}
+
+#section-1.tab ul li {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#section-1.tab ul li button {
+  width: 100%;
+  height: 100%;
+  color: var(--text-color1);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#section-1.tab ul li button.active {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border-radius: 30px 10px;
+  box-shadow: 0px 10px 30px 0px rgba(57, 66, 175, 0.3);
+}
+
+/* ? section-2 login box */
+
+/** individual login */
+#section-2.login-box {
+  margin-top: 50px;
+}
+
+#section-2.login-box .individual-login {
+  display: none;
+}
+
+#section-2.login-box .individual-login.on {
+  display: block;
+}
+
+#section-2.login-box .individual-login .item-box {
+  display: flex;
+}
+
+#section-2.login-box .item {
+  width: 25%;
+  height: 400px;
+  text-align: center;
+  margin-left: 15px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+#section-2.login-box .item.active {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 20px 40px 0px rgba(179, 191, 203, 0.2);
+}
+
+#section-2.login-box .item::before {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 40px auto 30px;
+  background: url(../img/spr_ico_individual_login.png) no-repeat;
+}
+
+#section-2.login-box .item .title {
+  height: 90px;
+}
+
+#section-2.login-box .item .title > h5 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#section-2.login-box .item.active .title > h5 {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+#section-2.login-box .item .title > p {
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--text-color2);
+  margin-top: 10px;
+}
+
+#section-2.login-box .item > a {
+  display: block;
+  width: 200px;
+  height: 46px;
+  line-height: 48px;
+  color: #ffffff;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  border-radius: 46px;
+}
+
+#section-2.login-box .item .text {
+  font-size: 14px;
+  color: var(--text-color1);
+  margin-top: 25px;
+}
+
+#section-2.login-box .item .text p:nth-child(2) {
+  line-height: 20px;
+  color: var(--text-color2);
+  margin-top: 10px;
+}
+
+/** corporate login */
+#section-2.login-box .corporate-login {
+  padding-top: 25px;
+  display: none;
+}
+
+#section-2.login-box .corporate-login.on {
+  display: block;
+}
+
+#section-2.login-box .corporate-login form {
+  width: 360px;
+  margin: 0 auto;
+}
+
+#section-2.login-box .corporate-login form > div label {
+  display: block;
+  color: var(--text-color1);
+  padding-bottom: 20px;
+}
+
+#section-2.login-box .corporate-login form > div input[type='text'] {
+  width: 100%;
+  height: 46px;
+  padding: 0 15px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+#section-2.login-box .corporate-login input::placeholder {
+  font-weight: 300;
+}
+
+#section-2.login-box .corporate-login input:focus::placeholder {
+  color: transparent;
+}
+
+#section-2.login-box .corporate-login form div a {
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 30px;
+  margin-top: 25px;
+  background-color: var(--primary-color);
+  border-radius: 46px;
+}
+
+/** guide-box */
+#section-2.login-box .guide-box {
+  margin-top: 50px;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+
+#section-2.login-box .guide-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+
+#section-2.login-box .guide-box p {
+  display: inline-block;
+  line-height: 26px;
+  color: var(--text-color1);
+}
+
+#section-2.login-box .guide-box .button-box a {
+  display: inline-block;
+  height: 46px;
+  line-height: 48px;
+  color: #ffffff;
+  padding: 0 30px;
+  background-color: var(--text-color2);
+  border-radius: 46px;
+}
+
+/* ? section-3.login-guide */
+#section-3.login-guide {
+  margin-top: 50px;
+  padding: 30px 30px 25px;
+  background-color: #fafaff;
+  border: 1px solid #858cda;
+  border-radius: 10px;
+}
+
+#section-3.login-guide h5 {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+  padding-left: 35px;
+  background: url(../img/ico_guide_notice.png) no-repeat;
+}
+
+#section-3.login-guide ul {
+  margin-top: 20px;
+}
+
+#section-3.login-guide ul li {
+  position: relative;
+  line-height: 24px;
+  color: var(--text-color2);
+  padding: 1px 0;
+  padding-left: 10px;
+}
+
+#section-3.login-guide ul li::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #7c7c7c;
+}
+
+#section-3.login-guide ul li a {
+  color: var(--primary-color);
+}
+
+/* ? section-4.question-box */
+#section-4.question-box {
+  margin-top: 80px;
+}
+
+#section-4.question-box h5 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-color1);
+}
+
+#section-4.question-box ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-4.question-box ul li {
+  width: 25%;
+}
+
+#section-4.question-box ul li + li {
+  margin-left: 33px;
+}
+
+#section-4.question-box ul li a {
+  position: relative;
+  display: block;
+  height: 143px;
+  line-height: 24px;
+  color: var(--text-color1);
+  padding: 30px 0 0 40px;
+  background-color: #f3fbff;
+  border-radius: 40px 10px;
+  box-shadow: 0 20px 40px 0 rgba(179, 191, 205, 0.2);
+}
+
+#section-4.question-box ul li a::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  background: url(../img/spr_often_q.png) no-repeat;
+}
+
+#section-4.question-box ul li:nth-child(2) a::before {
+  background-position: 0 -32px;
+}
+
+#section-4.question-box ul li:nth-child(3) a::before {
+  background-position: 0 -64px;
+}
+
+#section-4.question-box ul li:nth-child(4) a::before {
+  background-position: 0 -96px;
+}
+
+#section-4.question-box ul li a::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background: url(../img/ico_more1.png);
+}

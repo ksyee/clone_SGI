@@ -1,0 +1,155 @@
+<div class="award">
+  <ul>
+    <li><img src="./img/prize_banner01.jpg" alt="" /></li>
+    <li><img src="./img/prize_banner02.jpg" alt="" /></li>
+    <li><img src="./img/prize_banner03.jpg" alt="" /></li>
+    <li><img src="./img/prize_banner04.jpg" alt="" /></li>
+    <li><img src="./img/prize_banner08.jpg" alt="" /></li>
+    <li><img src="./img/prize_banner06.jpg" alt="" /></li>
+    <li>
+      <a href="#"><img src="./img/prize_banner07.jpg" alt="" /></a>
+    </li>
+  </ul>
+  <div class="swiper mySwiper-4">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/banner01.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/banner02.jpg" alt="" />
+      </div>
+    </div>
+    <div class="control">
+      <button type="button" class="btn-prev"></button>
+      <button type="button" class="btn-pause"></button>
+      <button type="button" class="btn-next"></button>
+    </div>
+  </div>
+</div>
+<div class="footer-menu">
+  <ul>
+    <li><a href="#">경영공시</a></li>
+    <li>
+      <a href="#"><strong>개인정보처리방침</strong></a>
+    </li>
+    <li><a href="#">이용약관</a></li>
+    <li><a href="#">신용정보활용체제</a></li>
+    <li><a href="#">전자금융거래 유의사항</a></li>
+    <li><a href="#">보호금융상품등록부</a></li>
+    <li><a href="#">보험사기방지센터</a></li>
+  </ul>
+  <ul class="sns">
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+  </ul>
+  <div>
+    <div class="family-site">
+      <a><span>패밀리 사이트</span></a>
+      <div class="site-list">
+        <ul>
+          <li><a href="#">SGI서울보증 베트남</a></li>
+          <li><a href="#">SGI서울보증 대리점</a></li>
+          <li><a href="#">SGI서울보증 쇼핑몰 보석보증보험</a></li>
+          <li><a href="#">SGI서울보증 속초연수원</a></li>
+          <li><a href="#">SGI서울보증 퇴직임직원 커뮤니티</a></li>
+          <li><a href="#">SGI신용정보</a></li>
+          <li><a href="#">SGI신용보험</a></li>
+          <li><a href="#">상생신용보험</a></li>
+          <li><a href="#">지급신용보험</a></li>
+          <li><a href="#">SGI Partners</a></li>
+          <li><button class="btn-close"></button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="contactus">
+    <span>서울시 종로구 김상옥로29 서울보증보험㈜</span>
+    <span>대표이사 유 광 열</span>
+    <span>사업자번호 : 120-81-13002</span>
+    <br />
+    <span>고객지원센터 : 1670-7000, 02-3671-7000, 080-666-0021</span>
+  </div>
+  <p class="copyright">ⓒ Seoul Guarantee Insurance. All rights reserved.</p>
+</div>
+
+<script>
+  // href, arc 경로
+  let thisHref = $(location);
+  console.log(thisHref);
+
+  console.log($('a').attr('href'));
+
+  if (thisHref.attr('href').indexOf('index.html') === -1) {
+    $('img').each(function () {
+      let matchHref = $(this).attr('src').split('/');
+      console.log(matchHref);
+      matchHref[0] = '..';
+
+      $(this).attr('src', matchHref.join('/'));
+    });
+  }
+
+  // let thisLocation = $(location);
+
+  // function hrefChange(el, path) {
+  //   $(el).each(function () {
+  //     let matchHref = $(this).attr('href').split('/');
+  //     console.log(matchHref);
+  //     matchHref[0] = path;
+
+  //     $(this).attr('href', matchHref.join('/'));
+  //   });
+  // }
+
+  // if (thisLocation.attr('href').indexOf('index.html') === -1) {
+  //   console.log(2);
+  //   hrefChange('a', '..');
+  // }
+
+  // ? footer slider
+  let swiper4 = new Swiper('.mySwiper-4', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+  });
+
+  $('#footer .btn-pause').click(e => {
+    $(e.currentTarget).toggleClass('play');
+    if ($(e.currentTarget).hasClass('play')) {
+      swiper4.autoplay.stop();
+    } else {
+      swiper4.autoplay.start();
+    }
+  });
+
+  //* family site
+  let familySite = $('#footer .family-site .site-list');
+  let familySiteH = familySite.height();
+
+  familySite.css('height', '0px').css('display', 'none');
+
+  $('#footer .family-site > a').click(() => {
+    familySite.css('display', 'block');
+    setTimeout(() => {
+      familySite.addClass('on').css('height', familySiteH + 'px');
+    }, 10);
+  });
+
+  $('#footer .family-site .site-list li .btn-close').click(() => {
+    familySite.css('height', '0px').removeClass('on');
+    setTimeout(() => {
+      familySite.css('display', 'none');
+    }, 400);
+  });
+</script>
