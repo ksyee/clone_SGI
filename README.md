@@ -16,3 +16,9 @@ header, footer는 따로 html을 만들어 include했습니다.
 작업이 완료된 페이지는 배경색으로 표시했습니다.
 
 공통적인 부분을 먼저 작업한 후 추후에 업데이트 예정입니다.
+
+## 작업환경
+- html
+- css
+- jQuery
+- swiperjs
